@@ -1,17 +1,50 @@
 {
   "nodes": {
+    "dotfiles": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1755036499,
+        "narHash": "sha256-lL3IcqUODnqdHAXoBWMIwLtQ4mHtY+bZzirYqUeZMj0=",
+        "owner": "imlyzh",
+        "repo": "dotfiles",
+        "rev": "25c73e42b27dbefd18cd2f0a7a1d109f1228f186",
+        "type": "github"
+      },
+      "original": {
+        "owner": "imlyzh",
+        "repo": "dotfiles",
+        "type": "github"
+      }
+    },
+    "dotfiles_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1755036499,
+        "narHash": "sha256-lL3IcqUODnqdHAXoBWMIwLtQ4mHtY+bZzirYqUeZMj0=",
+        "owner": "imlyzh",
+        "repo": "dotfiles",
+        "rev": "25c73e42b27dbefd18cd2f0a7a1d109f1228f186",
+        "type": "github"
+      },
+      "original": {
+        "owner": "imlyzh",
+        "repo": "dotfiles",
+        "type": "github"
+      }
+    },
     "home-config": {
       "inputs": {
+        "dotfiles": "dotfiles_2",
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs",
         "rust-overlay": "rust-overlay"
       },
       "locked": {
-        "lastModified": 1755027993,
-        "narHash": "sha256-KOMo3KFALhAuJIWT+r4fSSwf/g3CBqogNkLjvTXE8hU=",
+        "lastModified": 1755036907,
+        "narHash": "sha256-gHcK9bEvFTEQuAa2ECeV0T/zPOQQJyPjs7qq5psZnqQ=",
         "owner": "imlyzh",
         "repo": "home-manager",
-        "rev": "aeb8ef884d4ae0f262c01cf7478286a8fbc03cfe",
+        "rev": "5aa2291ee20e7d62219a50ed736ec1d755a5dbe0",
         "type": "github"
       },
       "original": {
@@ -115,6 +148,7 @@
     },
     "root": {
       "inputs": {
+        "dotfiles": "dotfiles",
         "home-config": "home-config",
         "home-manager": "home-manager_2",
         "nix-darwin": "nix-darwin",
