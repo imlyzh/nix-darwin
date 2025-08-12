@@ -28,7 +28,7 @@
             home-manager.darwinModules.home-manager {
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
-              home-manager.users.lyzh = home-config.homeConfigurations.darwin;
+              home-manager.users.lyzh = home-config.darwinConfig;
             }
             # ({ pkgs, ... }: {
             #   nixpkgs.overlays = [ rust-overlay.overlays.default ];

@@ -10,6 +10,7 @@
 
   environment.systemPackages = with pkgs; [
     tailscale
+    zsh
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
