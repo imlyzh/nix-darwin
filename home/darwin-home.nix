@@ -7,8 +7,8 @@
   };
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
-  # nix.package = lib.mkDefault pkgs.nix;
-  nix.package = pkgs.nix;
+  nix.package = lib.mkDefault pkgs.nix;
+  # nix.package = pkgs.nix;
   nixpkgs.config.allowUnfree = true;
 
   home.packages = with pkgs; [
