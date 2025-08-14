@@ -10,11 +10,6 @@
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
-    rust-overlay = {
-      url = "github:oxalica/rust-overlay";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     home-config.url = "github:imlyzh/home-manager";
     dotfiles = {
       url = "github:imlyzh/dotfiles";
@@ -22,16 +17,13 @@
     };
   };
 
-  outputs = { nixpkgs, home-manager, nix-darwin, rust-overlay, home-config, dotfiles, ... }@inputs:
+  outputs = { nixpkgs, home-manager, nix-darwin, home-config, dotfiles, ... }@inputs:
     {
       darwinConfigurations = {
         "macbook" = nix-darwin.lib.darwinSystem {
           pkgs = import nixpkgs {
             system = "aarch64-darwin";
             config.allowUnfree = true;
-            overlays = [
-              rust-overlay.overlays.default
-            ];
           };
           modules = [
             ./machines/macbook-configuration.nix
@@ -49,16 +41,9 @@
                   # (import "${home-config}/home/darwin-home.nix")
                   (import "${home-config}/home/shell.nix")
                   (import "${home-config}/home/dev.nix")
-                  ({ pkgs, ... }: {
-                    nixpkgs.overlays = [ rust-overlay.overlays.default ];
-                  })
                 ];
               };
             }
-            # ({ pkgs, ... }: {
-            #   nixpkgs.overlays = [ rust-overlay.overlays.default ];
-            #   environment.systemPackages = [ pkgs.rust-bin.stable.latest.default ];
-            # })
           ];
           specialArgs = { inherit inputs; };
         };
