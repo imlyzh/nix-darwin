@@ -24,7 +24,6 @@
 
     # firefox
     # transmission_4-gtk
-    # whisky
 
     # pkgs.qt5.full
     # pkgs.qt6.full

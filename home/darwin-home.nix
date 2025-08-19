@@ -43,17 +43,18 @@
     spotify
     telegram-desktop
     transmission_4-gtk
-    whisky
+    # whisky
 
-    pkgs.qt5.full
-    pkgs.qt6.full
+    # pkgs.qt5.full
+    # pkgs.qt6.full
     mumble
     # qbittorrent
     qbittorrent-enhanced
   ];
 
   home.sessionVariables = {
-    QT_PLUGIN_PATH = "${pkgs.qt6.full}/lib/qt-6/plugins:${pkgs.qt5.full}/lib/qt-5/plugins";
+    QT_PLUGIN_PATH = "${pkgs.qt6.full}/lib/qt-6/plugins";
+    # QT_PLUGIN_PATH = "${pkgs.qt6.full}/lib/qt-6/plugins:${pkgs.qt5.full}/lib/qt-5/plugins";
   };
 
   home.file = {
