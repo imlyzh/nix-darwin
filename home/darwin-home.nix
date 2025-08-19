@@ -11,6 +11,8 @@
   # nix.package = pkgs.nix;
   nixpkgs.config.allowUnfree = true;
 
+  programs.home-manager.enable = true;
+
   home.packages = with pkgs; [
     tailscale
     the-unarchiver
@@ -21,7 +23,6 @@
     iterm2
     syncplay
     iina
-    qbittorrent-enhanced
     localsend
     appcleaner
     keycastr
@@ -40,11 +41,17 @@
     spotify
     telegram-desktop
     transmission_4-gtk
-    mumble  
-
     whisky
+
+    qt5.qtbase
+    mumble
+    # qbittorrent
+    qbittorrent-enhanced
   ];
-  programs.home-manager.enable = true;
+
+  home.sessionVariables = {
+    QT_PLUGIN_PATH = "${pkgs.qt5.qtbase}/plugins";
+  };
 
   home.file = {
     ".config/ghostty/config.toml".text = "${dotfiles}/.config/ghostty/config.toml";

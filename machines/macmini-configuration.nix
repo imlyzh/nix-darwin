@@ -10,13 +10,15 @@
     home = "/Users/lyzh";
   };
 
-  programs.nix-index.enable = true;
-
   # nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
     tailscale
   ];
+
+  home.sessionVariables = {
+    QT_PLUGIN_PATH = "${pkgs.qt5.qtbase}/plugins";
+  };
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   # nix.gc = {

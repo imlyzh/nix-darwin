@@ -8,12 +8,20 @@
     home = "/Users/lyzh";
   };
 
-  programs.nix-index.enable = true;
-
   environment.systemPackages = with pkgs; [
     tailscale
     zsh
+    qt5.qtbase
   ];
+
+  environment.variables = {
+    RUSTUP_HOME = "\${HOME}/.rustup";
+    CARGO_HOME = "\${HOME}/.cargo";
+    CC = "clang";
+    CXX = "clang++";
+    QT_PLUGIN_PATH = "${pkgs.qt5.qtbase}/plugins";
+    # EDITOR = "nvim";
+  };
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
@@ -79,14 +87,4 @@
     nerd-fonts.fira-code
     jetbrains-mono
   ];
-
-  environment.variables = {
-    RUSTUP_HOME = "\${HOME}/.rustup";
-    CARGO_HOME = "\${HOME}/.cargo";
-    CC = "clang";
-    CXX = "clang++";
-  };
-#   environment.variables = {
-#     EDITOR = "nvim";
-#   };
 }
