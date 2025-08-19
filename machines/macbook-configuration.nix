@@ -11,7 +11,39 @@
   environment.systemPackages = with pkgs; [
     tailscale
     zsh
+
+    the-unarchiver
+
+    raycast           # 新一代应用启动器
+    rectangle         # 开源窗口管理
+
+    iterm2
+    syncplay
+    iina
+    localsend
+    appcleaner
+    keycastr
+    # ollama
+
+    zed-editor
+
+    obsidian
+    # logseq
+    # teamspeak3
+    # teamspeak_client
+    # teamspeak_server
+
+    firefox
+    discord
+    spotify
+    telegram-desktop
+    transmission_4-gtk
+    whisky
+
     qt5.qtbase
+    mumble
+    # qbittorrent
+    qbittorrent-enhanced
   ];
 
   environment.variables = {
