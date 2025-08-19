@@ -12,38 +12,22 @@
     tailscale
     zsh
 
-    the-unarchiver
+    # the-unarchiver
 
-    raycast           # 新一代应用启动器
-    rectangle         # 开源窗口管理
+    # raycast           # 新一代应用启动器
+    # rectangle         # 开源窗口管理
 
-    iterm2
-    syncplay
-    iina
-    localsend
-    appcleaner
-    keycastr
-    # ollama
+    # iterm2
+    # iina
+    # localsend
+    # appcleaner
 
-    zed-editor
+    # firefox
+    # transmission_4-gtk
+    # whisky
 
-    obsidian
-    # logseq
-    # teamspeak3
-    # teamspeak_client
-    # teamspeak_server
-
-    firefox
-    discord
-    spotify
-    telegram-desktop
-    transmission_4-gtk
-    whisky
-
-    qt5.qtbase
-    mumble
-    # qbittorrent
-    qbittorrent-enhanced
+    # pkgs.qt5.full
+    # pkgs.qt6.full
   ];
 
   environment.variables = {
@@ -51,7 +35,7 @@
     CARGO_HOME = "\${HOME}/.cargo";
     CC = "clang";
     CXX = "clang++";
-    QT_PLUGIN_PATH = "${pkgs.qt5.qtbase}/plugins";
+    QT_PLUGIN_PATH = "${pkgs.qt6.full}/lib/qt-6/plugins:${pkgs.qt5.full}/lib/qt-5/plugins";
     # EDITOR = "nvim";
   };
 
