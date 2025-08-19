@@ -8,6 +8,8 @@
     home = "/Users/lyzh";
   };
 
+  programs.nix-index.enable = true;
+
   environment.systemPackages = with pkgs; [
     tailscale
     zsh

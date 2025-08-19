@@ -40,7 +40,7 @@
     spotify
     telegram-desktop
     transmission_4-gtk
-    mumble
+    mumble  
 
     whisky
   ];
