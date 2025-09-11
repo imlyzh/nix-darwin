@@ -30,7 +30,7 @@
     keycastr
     # ollama
 
-    zed-editor
+    # zed-editor
 
     obsidian
     # logseq
@@ -39,9 +39,9 @@
     # teamspeak_server
 
     firefox
-    discord
-    spotify
-    telegram-desktop
+    # discord
+    # spotify
+    # telegram-desktop
     transmission_4-gtk
     # whisky
 
