@@ -47,6 +47,31 @@
           ];
           specialArgs = { inherit inputs; };
         };
+        "macmini" = nix-darwin.lib.darwinSystem {
+          pkgs = import nixpkgs {
+            system = "aarch64-darwin";
+            config.allowUnfree = true;
+          };
+          modules = [
+            ./machines/macmini-configuration.nix
+            home-manager.darwinModules.home-manager {
+              home-manager.users.lyzh = {
+                imports = [
+                  ./home/darwin-home.nix
+                  ({ config, ... }: {
+                      _module.args = {
+                        dotfiles=dotfiles;
+                    };
+                  })
+                  # (import "${home-config}/home/darwin-home.nix")
+                  (import "${home-config}/home/shell.nix")
+                  (import "${home-config}/home/dev.nix")
+                ];
+              };
+            }
+          ];
+          specialArgs = { inherit inputs; };
+        };
       };
     };
 }
