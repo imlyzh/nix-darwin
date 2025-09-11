@@ -95,7 +95,8 @@
   system = {
     keyboard = {
       enableKeyMapping = true;
-      remapCapsLockToControl = true;
+      # remapCapsLockToControl = true;
+      remapCapsLockToEscape = true;
     };
   };
 
@@ -110,14 +111,4 @@
     nerd-fonts.fira-code
     jetbrains-mono
   ];
-
-  environment.variables = {
-    RUSTUP_HOME = "\${HOME}/.rustup";
-    CARGO_HOME = "\${HOME}/.cargo";
-    CC = "clang";
-    CXX = "clang++";
-  };
-#   environment.variables = {
-#     EDITOR = "nvim";
-#   };
 }
