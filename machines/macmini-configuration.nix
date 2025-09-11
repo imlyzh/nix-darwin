@@ -10,17 +10,38 @@
     home = "/Users/lyzh";
   };
 
-  # nixpkgs.config.allowUnfree = true;
-
   environment.systemPackages = with pkgs; [
     tailscale
+    zsh
+
+    # the-unarchiver
+
+    # raycast           # 新一代应用启动器
+    # rectangle         # 开源窗口管理
+
+    # iterm2
+    # iina
+    # localsend
+    # appcleaner
+
+    # firefox
+    # transmission_4-gtk
+
+    # pkgs.qt5.full
+    # pkgs.qt6.full
   ];
 
-  home.sessionVariables = {
-    QT_PLUGIN_PATH = "${pkgs.qt5.qtbase}/plugins";
+  environment.variables = {
+    RUSTUP_HOME = "\${HOME}/.rustup";
+    CARGO_HOME = "\${HOME}/.cargo";
+    CC = "clang";
+    CXX = "clang++";
+    QT_PLUGIN_PATH = "${pkgs.qt6.full}/lib/qt-6/plugins:${pkgs.qt5.full}/lib/qt-5/plugins";
+    # EDITOR = "nvim";
   };
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
   # nix.gc = {
     # automatic = true;
     # options = "--delete-older-than 30d";
