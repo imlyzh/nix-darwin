@@ -38,7 +38,8 @@
     # teamspeak_client
     # teamspeak_server
 
-    firefox
+    # firefox
+    firefox-devedition
     # discord
     # spotify
     # telegram-desktop
