@@ -52,7 +52,6 @@
     ActivityMonitor.IconType = 0;
     WindowManager = {
       EnableTiledWindowMargins = false;
-      GloballyEnabled = true;
     };
     controlcenter = {
       BatteryShowPercentage = true;
