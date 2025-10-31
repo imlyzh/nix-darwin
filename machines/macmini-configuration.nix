@@ -42,10 +42,6 @@
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-  # nix.gc = {
-    # automatic = true;
-    # options = "--delete-older-than 30d";
-  # };
   system.defaults = {
     universalaccess.reduceMotion = true;
 
@@ -56,17 +52,11 @@
     ActivityMonitor.IconType = 0;
     WindowManager = {
       EnableTiledWindowMargins = false;
-      GloballyEnabled = true;
     };
     controlcenter = {
       BatteryShowPercentage = true;
     };
     dock = {
-      # launchanim = false;
-      # expose-animation-duration = 0.1;
-      # autohide-delay = 0.0;
-      # autohide-time-modifier = 0.0;
-
       autohide = false;
       show-recents = true;
       mru-spaces = false;
