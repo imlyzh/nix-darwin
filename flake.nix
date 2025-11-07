@@ -18,46 +18,21 @@
   };
 
   outputs = { nixpkgs, home-manager, nix-darwin, home-config, dotfiles, ... }@inputs:
-    {
+    rec {
       darwinConfigurations = {
-        "macbook" = nix-darwin.lib.darwinSystem {
+        "mac" = nix-darwin.lib.darwinSystem {
           pkgs = import nixpkgs {
             system = "aarch64-darwin";
             config.allowUnfree = true;
           };
           modules = [
-            ./machines/macbook-configuration.nix
+            ./configuration.nix
             home-manager.darwinModules.home-manager {
               # home-manager.useGlobalPkgs = true;
               # home-manager.useUserPackages = true;
               home-manager.users.lyzh = {
                 imports = [
-                  ./home/darwin-home.nix
-                  ({ config, ... }: {
-                      _module.args = {
-                        dotfiles=dotfiles;
-                    };
-                  })
-                  # (import "${home-config}/home/darwin-home.nix")
-                  (import "${home-config}/home/shell.nix")
-                  (import "${home-config}/home/dev.nix")
-                ];
-              };
-            }
-          ];
-          specialArgs = { inherit inputs; };
-        };
-        "macmini" = nix-darwin.lib.darwinSystem {
-          pkgs = import nixpkgs {
-            system = "aarch64-darwin";
-            config.allowUnfree = true;
-          };
-          modules = [
-            ./machines/macmini-configuration.nix
-            home-manager.darwinModules.home-manager {
-              home-manager.users.lyzh = {
-                imports = [
-                  ./home/darwin-home.nix
+                  ./darwin-home.nix
                   ({ config, ... }: {
                       _module.args = {
                         dotfiles=dotfiles;
@@ -73,5 +48,6 @@
           specialArgs = { inherit inputs; };
         };
       };
+      packages.aarch64-darwin.default = darwinConfigurations."mac".system;
     };
 }

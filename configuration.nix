@@ -37,13 +37,13 @@
     CC = "clang";
     CXX = "clang++";
     QT_PLUGIN_PATH = "${pkgs.qt6.full}/lib/qt-6/plugins:${pkgs.qt5.full}/lib/qt-5/plugins";
-    # EDITOR = "nvim";
+    EDITOR = "nvim";
   };
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   system.defaults = {
-    universalaccess.reduceMotion = true;
+    # universalaccess.reduceMotion = true;
 
     NSGlobalDomain.AppleShowAllExtensions = true;
     NSGlobalDomain.AppleShowAllFiles = true;
@@ -57,7 +57,7 @@
       BatteryShowPercentage = true;
     };
     dock = {
-      autohide = false;
+      autohide = true;
       show-recents = true;
       mru-spaces = false;
       appswitcher-all-displays = true;
