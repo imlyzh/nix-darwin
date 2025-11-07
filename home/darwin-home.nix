@@ -26,7 +26,7 @@
     syncplay
     iina
     localsend
-    appcleaner
+    # appcleaner
     keycastr
     # ollama
 
