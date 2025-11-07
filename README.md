@@ -7,15 +7,18 @@
 ### first bootload
 
 ```sh
-sudo nix run nix-darwin -- switch --flake .#macbook
+sudo nix --extra-experimental-features "nix-command flakes" run nix-darwin/nix-darwin-25.05#darwin-rebuild -- switch --flake .#mac
 ```
 
-```sh
-sudo nix --extra-experimental-features "nix-command flakes" run nix-darwin/nix-darwin-25.05#darwin-rebuild -- switch --flake .#macmini
-```
 
 ```sh
-sudo darwin-rebuild switch --flake .#macbook
+sudo nix run nix-darwin -- switch --flake .#mac
+```
+
+### apply config
+
+```sh
+sudo darwin-rebuild switch --flake .#mac
 ```
 
 ## use in home-manager
