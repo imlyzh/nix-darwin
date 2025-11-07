@@ -14,21 +14,29 @@
     tailscale
     zsh
 
-    # the-unarchiver
-
-    # raycast           # 新一代应用启动器
-    # rectangle         # 开源窗口管理
-
-    # iterm2
-    # iina
-    # localsend
-    # appcleaner
+    iterm2
 
     # firefox
-    # transmission_4-gtk
+    firefox-devedition
 
-    # pkgs.qt5.full
-    # pkgs.qt6.full
+    keka
+
+    raycast           # 新一代应用启动器
+    rectangle         # 开源窗口管理
+
+    localsend
+    syncplay
+    iina
+
+    mumble
+    qbittorrent-enhanced
+
+    # discord
+    # spotify
+
+    keycastr
+
+    obsidian
   ];
 
   environment.variables = {

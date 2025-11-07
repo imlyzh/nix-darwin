@@ -17,7 +17,8 @@
     tailscale
     zsh
 
-    the-unarchiver
+    keka
+    # the-unarchiver
 
     raycast           # 新一代应用启动器
     rectangle         # 开源窗口管理
@@ -38,12 +39,12 @@
     # teamspeak_client
     # teamspeak_server
 
-    firefox
+    # firefox
     firefox-devedition
     # discord
     # spotify
     # telegram-desktop
-    transmission_4-gtk
+    # transmission_4-gtk
     # whisky
 
     # pkgs.qt5.full
