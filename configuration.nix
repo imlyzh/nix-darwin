@@ -21,6 +21,8 @@
 
     keka
 
+    aria2
+
     raycast           # 新一代应用启动器
     rectangle         # 开源窗口管理
 
