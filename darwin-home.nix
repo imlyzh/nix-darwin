@@ -19,7 +19,7 @@
     raycast           # 新一代应用启动器
     rectangle         # 开源窗口管理
     keycastr
-    # appcleaner
+    appcleaner
 
     iterm2
     iina
@@ -27,6 +27,10 @@
     keka
 
     # vscode
+
+    # discord
+    # spotify
+    # obsidian
   ];
 
   home.sessionVariables = {

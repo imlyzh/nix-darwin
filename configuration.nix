@@ -23,13 +23,6 @@
     iina
 
     keka
-
-    # firefox
-    # firefox-devedition
-
-    # discord
-    # spotify
-    # obsidian
   ];
 
   environment.variables = {
