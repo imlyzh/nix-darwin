@@ -15,45 +15,18 @@
 
   home.packages = with pkgs; [
     tailscale
-    zsh
-
-    keka
-    # the-unarchiver
-
-    aria2
 
     raycast           # 新一代应用启动器
     rectangle         # 开源窗口管理
+    keycastr
+    # appcleaner
 
     iterm2
-    syncplay
     iina
-    localsend
-    # appcleaner
-    keycastr
-    # ollama
 
-    # zed-editor
+    keka
 
-    obsidian
-    # logseq
-    # teamspeak3
-    # teamspeak_client
-    # teamspeak_server
-
-    # firefox
-    firefox-devedition
-    # discord
-    # spotify
-    # telegram-desktop
-    # transmission_4-gtk
-    # whisky
-
-    # pkgs.qt5.full
-    # pkgs.qt6.full
-    mumble
-    # qbittorrent
-    qbittorrent-enhanced
+    # vscode
   ];
 
   home.sessionVariables = {

@@ -14,31 +14,22 @@
     tailscale
     zsh
 
-    iterm2
+    raycast           # 新一代应用启动器
+    rectangle         # 开源窗口管理
+    keycastr
+    # appcleaner
 
-    # firefox
-    firefox-devedition
+    iterm2
+    iina
 
     keka
 
-    aria2
-
-    raycast           # 新一代应用启动器
-    rectangle         # 开源窗口管理
-
-    localsend
-    syncplay
-    iina
-
-    mumble
-    qbittorrent-enhanced
+    # firefox
+    # firefox-devedition
 
     # discord
     # spotify
-
-    keycastr
-
-    obsidian
+    # obsidian
   ];
 
   environment.variables = {
