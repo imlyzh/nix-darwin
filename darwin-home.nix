@@ -26,7 +26,7 @@
 
     keka
 
-    chromium
+    # chromium
     # vscode
 
     # discord
