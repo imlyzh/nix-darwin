@@ -36,6 +36,7 @@
     "folo"
     "obs"
     "onyx"
+    "disk-inventory-x"
 
     # "github"
     # "jetbrains-toolbox"
@@ -43,7 +44,7 @@
 
     "steam"
     "streamlabs"
-    "minecraft"
+    # "minecraft"
 
     # "logseq"
     # "discord"
