@@ -43,7 +43,6 @@
     # "zed"
 
     "steam"
-    "streamlabs"
     # "minecraft"
 
     # "logseq"
