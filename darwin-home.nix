@@ -14,20 +14,15 @@
   programs.home-manager.enable = true;
 
   home.packages = with pkgs; [
-    tailscale
+    # tailscale
 
-    stats
-    hidden-bar
-    ice-bar
+    # raycast
+    # rectangle
+    # keycastr
+    # appcleaner
 
-    raycast           # 新一代应用启动器
-    rectangle         # 开源窗口管理
-
-    keycastr
-    appcleaner
-
-    iterm2
-    iina
+    # iterm2
+    # iina
   ];
 
   home.sessionVariables = {

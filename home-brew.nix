@@ -3,13 +3,47 @@
   homebrew.enable = true;
   # homebrew.formulae = [];
   homebrew.casks = [
-    "keka"
-    "ungoogled-chromium"
-    "visual-studio-code"
+    "tailscale-app"
 
+    "raycast"
+    "rectangle"
+    "keycastr"
+    "appcleaner"
+    "stats"
+    "hiddenbar"
+    "jordanbaird-ice"
+
+    "visual-studio-code"
+    "ghostty"
+    "orbstack"
+    "iterm2"
+
+    "ungoogled-chromium"
+    "firefox@developer-edition"
+    "telegram-desktop"
+    "clash-verge-rev"
+    "chatwise"
+    "keka"
+    "iina"
+    "vlc"
+    "zotero"
+    "motrix"
+
+    "anki"
+
+    # "github"
+    # "jetbrains-toolbox"
+    # "zed"
+
+    "steam"
+    "minecraft"
+
+    # "logseq"
     # "discord"
     # "spotify"
+    # "adguard"
     # "obsidian"
+    # "thunderbird"
   ];
   # homebrew.masApps = {};
   # homebrew.onActivation.upgrade = true;
