@@ -28,14 +28,21 @@
     "vlc"
     "zotero"
     "motrix"
+    # "ollama"
 
     "anki"
+
+    "balenaetcher"
+    "folo"
+    "obs"
+    "onyx"
 
     # "github"
     # "jetbrains-toolbox"
     # "zed"
 
     "steam"
+    "streamlabs"
     "minecraft"
 
     # "logseq"
