@@ -27,6 +27,34 @@
           };
           modules = [
             ./configuration.nix
+            ./home-brew.nix
+            home-manager.darwinModules.home-manager {
+              # home-manager.useGlobalPkgs = true;
+              # home-manager.useUserPackages = true;
+              home-manager.users.lyzh = {
+                imports = [
+                  ./darwin-home.nix
+                  ({ config, ... }: {
+                      _module.args = {
+                        dotfiles=dotfiles;
+                    };
+                  })
+                  (import "${home-config}/home/shell.nix")
+                  (import "${home-config}/home/dev.nix")
+                  (import "${home-config}/home/desktop-apps.nix")
+                ];
+              };
+            }
+          ];
+          specialArgs = { inherit inputs; };
+        };
+        "mac-without-brew" = nix-darwin.lib.darwinSystem {
+          pkgs = import nixpkgs {
+            system = "aarch64-darwin";
+            config.allowUnfree = true;
+          };
+          modules = [
+            ./configuration.nix
             home-manager.darwinModules.home-manager {
               # home-manager.useGlobalPkgs = true;
               # home-manager.useUserPackages = true;

@@ -1,6 +1,7 @@
 { config, pkgs, inputs, ... }:
 {
   nix.enable = false;
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   system.stateVersion = 6;
   system.primaryUser = "lyzh";
@@ -12,29 +13,8 @@
 
   environment.systemPackages = with pkgs; [
     tailscale
-    zsh
-
-    raycast           # 新一代应用启动器
-    rectangle         # 开源窗口管理
-    keycastr
-    # appcleaner
-
-    iterm2
-    iina
-
-    keka
+    # zsh
   ];
-
-  environment.variables = {
-    RUSTUP_HOME = "\${HOME}/.rustup";
-    CARGO_HOME = "\${HOME}/.cargo";
-    CC = "clang";
-    CXX = "clang++";
-    QT_PLUGIN_PATH = "${pkgs.qt6.full}/lib/qt-6/plugins:${pkgs.qt5.full}/lib/qt-5/plugins";
-    EDITOR = "nvim";
-  };
-
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   system.defaults = {
     # universalaccess.reduceMotion = true;
@@ -51,7 +31,7 @@
       BatteryShowPercentage = true;
     };
     dock = {
-      autohide = true;
+      # autohide = true;
       show-recents = true;
       mru-spaces = false;
       appswitcher-all-displays = true;

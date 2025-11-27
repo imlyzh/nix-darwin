@@ -16,26 +16,29 @@
   home.packages = with pkgs; [
     tailscale
 
+    stats
+    hidden-bar
+    ice-bar
+
     raycast           # 新一代应用启动器
     rectangle         # 开源窗口管理
+
     keycastr
     appcleaner
 
     iterm2
     iina
-
-    keka
-
-    # chromium
-    # vscode
-
-    # discord
-    # spotify
-    # obsidian
   ];
 
   home.sessionVariables = {
-    QT_PLUGIN_PATH = "${pkgs.qt6.full}/lib/qt-6/plugins";
+    RUSTUP_HOME = "\${HOME}/.rustup";
+    CARGO_HOME = "\${HOME}/.cargo";
+    EDITOR = "nvim";
+
+    # CC = "clang";
+    # CXX = "clang++";
+
+    # QT_PLUGIN_PATH = "${pkgs.qt6.full}/lib/qt-6/plugins";
     # QT_PLUGIN_PATH = "${pkgs.qt6.full}/lib/qt-6/plugins:${pkgs.qt5.full}/lib/qt-5/plugins";
   };
 
