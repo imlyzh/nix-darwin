@@ -10,7 +10,6 @@
 sudo nix --extra-experimental-features "nix-command flakes" run nix-darwin/nix-darwin-25.05#darwin-rebuild -- switch --flake .#mac
 ```
 
-
 ```sh
 sudo nix run nix-darwin -- switch --flake .#mac
 ```
