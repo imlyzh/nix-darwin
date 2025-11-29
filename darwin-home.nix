@@ -8,10 +8,19 @@
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nix.package = lib.mkDefault pkgs.nix;
-  # nix.package = pkgs.nix;
   nixpkgs.config.allowUnfree = true;
 
   programs.home-manager.enable = true;
+
+  programs.git = {
+    enable = true;
+    userName = "imlyzh";
+    userEmail = "enterindex@gmail.com";
+    # settings.user = {
+      # name = "imlyzh";
+      # email = "enterindex@gmail.com";
+    # };
+  };
 
   home.packages = with pkgs; [
     # tailscale
@@ -24,6 +33,7 @@
     # iterm2
     # iina
   ];
+
 
   home.sessionVariables = {
     RUSTUP_HOME = "\${HOME}/.rustup";
