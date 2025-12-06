@@ -30,6 +30,7 @@
     "zotero"
     "motrix"
     # "ollama"
+    "mumble"
 
     "anki"
 
