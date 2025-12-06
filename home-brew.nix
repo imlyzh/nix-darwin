@@ -19,6 +19,7 @@
     "iterm2"
 
     "ungoogled-chromium"
+    "firefox"
     "firefox@developer-edition"
     "telegram-desktop"
     "clash-verge-rev"
