@@ -11,10 +11,7 @@
     home = "/Users/lyzh";
   };
 
-  environment.systemPackages = with pkgs; [
-    tailscale
-    # zsh
-  ];
+  environment.systemPackages = with pkgs; [];
 
   system.defaults = {
     # universalaccess.reduceMotion = true;
