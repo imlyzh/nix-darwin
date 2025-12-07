@@ -25,14 +25,13 @@
     "telegram-desktop"
     "clash-verge-rev"
     "localsend"
-    "qbittorrent-enhanced"
+    "c0re100-qbittorrent" # qbittorrent-enhanced
     "chatwise"
     "iina"
     "vlc"
     # "mpv"
     "zotero"
     "motrix"
-    # "ollama"
     "mumble"
     "syncplay"
 
@@ -51,6 +50,7 @@
     "steam"
     # "minecraft"
 
+    # "ollama"
     # "logseq"
     # "discord"
     # "spotify"
