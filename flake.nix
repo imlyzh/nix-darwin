@@ -41,7 +41,6 @@
                   })
                   (import "${home-config}/home/shell.nix")
                   (import "${home-config}/home/dev.nix")
-                  (import "${home-config}/home/desktop-apps.nix")
                 ];
               };
             }
@@ -68,7 +67,6 @@
                   })
                   (import "${home-config}/home/shell.nix")
                   (import "${home-config}/home/dev.nix")
-                  (import "${home-config}/home/desktop-apps.nix")
                 ];
               };
             }
