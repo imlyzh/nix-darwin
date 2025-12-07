@@ -31,6 +31,7 @@
     "motrix"
     # "ollama"
     "mumble"
+    "syncplay"
 
     "anki"
 
