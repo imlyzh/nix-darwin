@@ -3,57 +3,63 @@
   homebrew.enable = true;
   # homebrew.formulae = [];
   homebrew.casks = [
+    # necessary
+    "clash-verge-rev"
     "tailscale-app"
 
-    "raycast"
-    "rectangle"
-    "keycastr"
-    "appcleaner"
-    "stats"
-    "jordanbaird-ice"
-
+    # necessary for development
     "visual-studio-code"
     "ghostty"
-    "orbstack"
     "iterm2"
-    "keka"
-
-    "ungoogled-chromium"
     "firefox"
-    "firefox@developer-edition"
-    "telegram-desktop"
-    "clash-verge-rev"
+
+    # cover Apple’s mess
+    "rectangle"
+    "raycast"
+    "keycastr"
+    "jordanbaird-ice"
+
+    # improve life
     "localsend"
-    "c0re100-qbittorrent" # qbittorrent-enhanced
-    "chatwise"
+    "appcleaner"
+    "keka"
+    "stats"
+
     "iina"
     "vlc"
     # "mpv"
-    "zotero"
+    "obs"
+    "anki"
     "motrix"
+    "zotero"
     "mumble"
     "syncplay"
-
-    "anki"
-
     "balenaetcher"
-    "folo"
-    "obs"
-    "onyx"
     "disk-inventory-x"
+    "c0re100-qbittorrent" # qbittorrent-enhanced
 
+    "chatwise"
+    "telegram-desktop"
+    "steam"
+
+    # optional
     "github"
+    "onyx"
+    "folo"
+
+    "ungoogled-chromium"
+    "firefox@developer-edition"
+
+    "orbstack"
+    # "ollama"
+
     # "jetbrains-toolbox"
     # "zed"
 
-    "steam"
-    # "minecraft"
-
-    # "ollama"
-    # "logseq"
+    # "adguard"
     # "discord"
     # "spotify"
-    # "adguard"
+    # "logseq"
     # "obsidian"
     # "thunderbird"
   ];
