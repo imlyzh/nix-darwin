@@ -10,7 +10,6 @@
     "keycastr"
     "appcleaner"
     "stats"
-    "hiddenbar"
     "jordanbaird-ice"
 
     "visual-studio-code"

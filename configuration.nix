@@ -11,7 +11,7 @@
     home = "/Users/lyzh";
   };
 
-  environment.systemPackages = with pkgs; [];
+  # environment.systemPackages = with pkgs; [];
 
   system.defaults = {
     # universalaccess.reduceMotion = true;

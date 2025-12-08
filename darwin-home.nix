@@ -14,26 +14,13 @@
 
   programs.git = {
     enable = true;
-    # userName = "imlyzh";
-    # userEmail = "enterindex@gmail.com";
     settings.user = {
       name = "imlyzh";
       email = "enterindex@gmail.com";
     };
   };
 
-  home.packages = with pkgs; [
-    # tailscale
-
-    # raycast
-    # rectangle
-    # keycastr
-    # appcleaner
-
-    # iterm2
-    # iina
-  ];
-
+  # home.packages = with pkgs; [];
 
   home.sessionVariables = {
     RUSTUP_HOME = "\${HOME}/.rustup";
