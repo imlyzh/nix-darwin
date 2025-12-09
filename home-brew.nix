@@ -15,8 +15,8 @@
 
     # cover Apple’s mess
     "rectangle"
-    "raycast"
     "keycastr"
+    # "raycast"
     "jordanbaird-ice"
 
     # improve life
