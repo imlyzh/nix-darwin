@@ -39,7 +39,7 @@
     "c0re100-qbittorrent" # qbittorrent-enhanced
 
     "chatwise"
-    "telegram-desktop"
+    "telegram"
     "steam"
 
     # optional
