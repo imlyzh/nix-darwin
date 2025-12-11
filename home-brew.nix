@@ -48,11 +48,11 @@
     "folo"
 
     "ungoogled-chromium"
-    "firefox@developer-edition"
 
     "orbstack"
     # "ollama"
 
+    # "firefox@developer-edition"
     # "jetbrains-toolbox"
     # "zed"
 
