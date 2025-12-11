@@ -35,7 +35,8 @@
     # "mumble"
     "syncplay"
     "balenaetcher"
-    "disk-inventory-x"
+    "grandperspective"
+    # "disk-inventory-x"
     "c0re100-qbittorrent" # qbittorrent-enhanced
 
     "chatwise"
