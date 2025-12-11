@@ -11,7 +11,9 @@
     home = "/Users/lyzh";
   };
 
-  # environment.systemPackages = with pkgs; [];
+  environment.systemPackages = with pkgs; [
+    mumble
+  ];
 
   system.defaults = {
     # universalaccess.reduceMotion = true;

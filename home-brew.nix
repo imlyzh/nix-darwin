@@ -32,7 +32,7 @@
     "anki"
     "motrix"
     "zotero"
-    "mumble"
+    # "mumble"
     "syncplay"
     "balenaetcher"
     "disk-inventory-x"
