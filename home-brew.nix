@@ -38,6 +38,7 @@
     "grandperspective"
     # "disk-inventory-x"
     "c0re100-qbittorrent" # qbittorrent-enhanced
+    "thunderbird"
 
     "chatwise"
     "telegram"
@@ -62,7 +63,7 @@
     # "spotify"
     # "logseq"
     # "obsidian"
-    # "thunderbird"
+
   ];
   # homebrew.masApps = {};
   # homebrew.onActivation.upgrade = true;
