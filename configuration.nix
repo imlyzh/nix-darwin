@@ -2,6 +2,7 @@
 {
   nix.enable = false;
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.auto-optimise-store = true;
 
   system.stateVersion = 6;
   system.primaryUser = "lyzh";
@@ -14,6 +15,8 @@
   environment.systemPackages = with pkgs; [
     mumble
   ];
+
+  security.pam.services.sudo_local.touchIdAuth = true;
 
   system.defaults = {
     # universalaccess.reduceMotion = true;
@@ -31,7 +34,7 @@
     };
     dock = {
       # autohide = true;
-      show-recents = true;
+      show-recents = false;
       mru-spaces = false;
       appswitcher-all-displays = true;
       scroll-to-open = true;
@@ -39,16 +42,17 @@
     };
     finder = {
       AppleShowAllFiles = true;
-      _FXShowPosixPathInTitle = true; # 在标题栏显示完整路径
       AppleShowAllExtensions = true;   # 显示所有文件扩展名
       FXDefaultSearchScope = "SCcf";
+      FXPreferredViewStyle = "Nlsv"; # 默认使用列表视图 ("Nlsv": 列表, "icnv": 图标, "clmv": 分栏)
+      FXEnableExtensionChangeWarning = false;
+      _FXShowPosixPathInTitle = true; # 在标题栏显示完整路径
+      _FXSortFoldersFirst = true;
       NewWindowTarget = "Home";
       QuitMenuItem = false;
       ShowMountedServersOnDesktop = true;
       ShowPathbar = true;
-      ShowStatusBar = false;
-      _FXSortFoldersFirst = true;
-      FXEnableExtensionChangeWarning = false;
+      ShowStatusBar = true;
     };
     screencapture = {
       target = "clipboard"; # "file" "preview"
