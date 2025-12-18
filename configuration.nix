@@ -35,6 +35,7 @@
     dock = {
       # autohide = true;
       show-recents = false;
+      static-only = false;
       mru-spaces = false;
       appswitcher-all-displays = true;
       scroll-to-open = true;
