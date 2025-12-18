@@ -34,7 +34,6 @@
     # QT_PLUGIN_PATH = "${pkgs.qt6.full}/lib/qt-6/plugins:${pkgs.qt5.full}/lib/qt-5/plugins";
   };
 
-  home.file = {
-    ".config/ghostty/config.toml".text = "${dotfiles}/.config/ghostty/config.toml";
-  };
+  # xdg.configFile."ghostty/config.toml".source = "${dotfiles}/.config/ghostty/config.toml";
+  # xdg.configFile."helix/config.toml".source = "${dotfiles}/.config/helix/config.toml";
 }
