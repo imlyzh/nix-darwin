@@ -34,7 +34,6 @@
       show-recents = true;
       mru-spaces = false;
       appswitcher-all-displays = true;
-      expose-group-apps = true;
       scroll-to-open = true;
       wvous-bl-corner = 7;
     };
