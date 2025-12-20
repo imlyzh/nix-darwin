@@ -14,6 +14,7 @@
     "firefox"
 
     # cover Apple’s mess
+    "raycast"
     "rectangle"
     "keycastr"
     # "raycast"
