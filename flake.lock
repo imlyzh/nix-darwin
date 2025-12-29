@@ -3,11 +3,11 @@
     "dotfiles": {
       "flake": false,
       "locked": {
-        "lastModified": 1767013361,
-        "narHash": "sha256-aX83QGcDuAfAmPZAmWsLh21zCBpC2D+/qO48fVGsEkc=",
+        "lastModified": 1767015477,
+        "narHash": "sha256-zIuWe5jksRrQyWQJZpXEScWQcKOlI2Dg85nZNf1SSKI=",
         "owner": "imlyzh",
         "repo": "dotfiles",
-        "rev": "7796121d07d42e253c6a08ea3a0b5d769a64a4f2",
+        "rev": "d024c0909bb0d6dbf9389958e46cc203c180ea11",
         "type": "github"
       },
       "original": {
@@ -19,11 +19,11 @@
     "dotfiles_2": {
       "flake": false,
       "locked": {
-        "lastModified": 1767013361,
-        "narHash": "sha256-aX83QGcDuAfAmPZAmWsLh21zCBpC2D+/qO48fVGsEkc=",
+        "lastModified": 1767015477,
+        "narHash": "sha256-zIuWe5jksRrQyWQJZpXEScWQcKOlI2Dg85nZNf1SSKI=",
         "owner": "imlyzh",
         "repo": "dotfiles",
-        "rev": "7796121d07d42e253c6a08ea3a0b5d769a64a4f2",
+        "rev": "d024c0909bb0d6dbf9389958e46cc203c180ea11",
         "type": "github"
       },
       "original": {
@@ -40,11 +40,11 @@
         "rime-ice": "rime-ice"
       },
       "locked": {
-        "lastModified": 1767013900,
-        "narHash": "sha256-6KnJpT86mfd1bg4rW/5UEFNL1Zg8X6ADOEgavW1scL4=",
+        "lastModified": 1767015529,
+        "narHash": "sha256-KYbc5uC7+cnIBLQdCdndgwlxd15bHAGG/G7qq6bBuQ4=",
         "owner": "imlyzh",
         "repo": "home-manager",
-        "rev": "7c6e2b6296c87d9b96bbb138935853511fe415ec",
+        "rev": "e35bed48c9fbbfe5d9453b3ed8954c55bc9af575",
         "type": "github"
       },
       "original": {
