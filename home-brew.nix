@@ -17,15 +17,14 @@
     "raycast"
     "rectangle"
     "keycastr"
-    # "raycast"
     "jordanbaird-ice"
+    "stats"
+    "keka"
+    "appcleaner"
+    "localsend"
+    "squirrel-app"
 
     # improve life
-    "localsend"
-    "appcleaner"
-    "keka"
-    "stats"
-
     "iina"
     "vlc"
     # "mpv"
@@ -33,11 +32,10 @@
     "anki"
     "motrix"
     "zotero"
-    # "mumble"
+    "mumble"
     "syncplay"
     "balenaetcher"
     "grandperspective"
-    # "disk-inventory-x"
     "c0re100-qbittorrent" # qbittorrent-enhanced
     "thunderbird"
 
@@ -46,6 +44,7 @@
     "steam"
 
     # optional
+    "rustdesk"
     "github"
     "onyx"
     "folo"
@@ -53,8 +52,8 @@
     "ungoogled-chromium"
 
     "orbstack"
-    # "ollama"
 
+    # "ollama"
     # "firefox@developer-edition"
     # "jetbrains-toolbox"
     # "zed"
@@ -64,7 +63,6 @@
     # "spotify"
     # "logseq"
     # "obsidian"
-
   ];
   # homebrew.masApps = {};
   # homebrew.onActivation.upgrade = true;
