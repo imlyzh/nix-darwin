@@ -10,6 +10,11 @@
     home-manager.url = "github:nix-community/home-manager/release-25.11";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
+    rime-ice = {
+      url = "github:iDvel/rime-ice";
+      flake = false;
+    };
+
     home-config.url = "github:imlyzh/home-manager";
     dotfiles = {
       url = "github:imlyzh/dotfiles";
@@ -29,6 +34,7 @@
             ./configuration.nix
             ./home-brew.nix
             home-manager.darwinModules.home-manager {
+              home-manager.extraSpecialArgs = { inherit inputs; };
               # home-manager.useGlobalPkgs = true;
               # home-manager.useUserPackages = true;
               home-manager.users.lyzh = {
@@ -41,11 +47,12 @@
                   })
                   (import "${home-config}/home/shell.nix")
                   (import "${home-config}/home/dev.nix")
+                  (import "${home-config}/home/rime.nix")
                 ];
               };
             }
           ];
-          specialArgs = { inherit inputs; };
+          # specialArgs = { inherit inputs; };
         };
         "mac-without-brew" = nix-darwin.lib.darwinSystem {
           pkgs = import nixpkgs {
@@ -55,6 +62,7 @@
           modules = [
             ./configuration.nix
             home-manager.darwinModules.home-manager {
+              home-manager.extraSpecialArgs = { inherit inputs; };
               # home-manager.useGlobalPkgs = true;
               # home-manager.useUserPackages = true;
               home-manager.users.lyzh = {
@@ -67,11 +75,12 @@
                   })
                   (import "${home-config}/home/shell.nix")
                   (import "${home-config}/home/dev.nix")
+                  (import "${home-config}/home/rime.nix")
                 ];
               };
             }
           ];
-          specialArgs = { inherit inputs; };
+          # specialArgs = { inherit inputs; };
         };
       };
       packages.aarch64-darwin.default = darwinConfigurations."mac".system;

@@ -72,6 +72,7 @@
     noto-fonts-cjk-sans
     noto-fonts-cjk-serif
     sarasa-gothic  #更纱黑体
+    lxgw-wenkai
     source-code-pro
     hack-font
     fira-code
