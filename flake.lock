@@ -41,11 +41,11 @@
         "rime-without-ice": "rime-without-ice"
       },
       "locked": {
-        "lastModified": 1767042187,
-        "narHash": "sha256-IFqQ97IJKReAySbQeN9s0aVvMn1lNG5WGigYPx/alVI=",
+        "lastModified": 1767043594,
+        "narHash": "sha256-fK6+UuhKoxZT/fy0NGbUQwYaJ2M9VuLw74pWZjdpjY0=",
         "owner": "imlyzh",
         "repo": "home-manager",
-        "rev": "da9f5397b8c6a140dba30bd37f61850d37575473",
+        "rev": "8b7216df4755d85703d086f260f96f2bc14fbec7",
         "type": "github"
       },
       "original": {
@@ -185,11 +185,11 @@
     "rime-without-ice": {
       "flake": false,
       "locked": {
-        "lastModified": 1767042017,
-        "narHash": "sha256-nqTPMgNMQwxVbuU5oe3G735z4BOiQiPu8NAJhwfpAOI=",
+        "lastModified": 1767043520,
+        "narHash": "sha256-fS1+63n0I9teAVroz/JhcXtVuAbBk+imWo9ZF+6iIo8=",
         "owner": "imlyzh",
         "repo": "rime-without-ice",
-        "rev": "e0c36fe6042795f22b5bd2e1c75380d0b34c3671",
+        "rev": "be336f0ae91f42e99d2e6f2daa21413d9af50faf",
         "type": "github"
       },
       "original": {
@@ -201,11 +201,11 @@
     "rime-without-ice_2": {
       "flake": false,
       "locked": {
-        "lastModified": 1767043520,
-        "narHash": "sha256-fS1+63n0I9teAVroz/JhcXtVuAbBk+imWo9ZF+6iIo8=",
+        "lastModified": 1767045811,
+        "narHash": "sha256-jECpEoG0Ex52Fern6j3mgnr7fgWQtb1pmrqS46U7wg0=",
         "owner": "imlyzh",
         "repo": "rime-without-ice",
-        "rev": "be336f0ae91f42e99d2e6f2daa21413d9af50faf",
+        "rev": "c4a2dc6c92c1aa5ecf6f9c1400c75a191f33ba29",
         "type": "github"
       },
       "original": {
