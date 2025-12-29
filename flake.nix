@@ -15,6 +15,11 @@
       flake = false;
     };
 
+    rime-without-ice = {
+      url = "github:imlyzh/rime-without-ice";
+      flake = false;
+    };
+
     home-config.url = "github:imlyzh/home-manager";
     dotfiles = {
       url = "github:imlyzh/dotfiles";
