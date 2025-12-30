@@ -25,6 +25,7 @@
     NSGlobalDomain.AppleShowAllFiles = true;
     NSGlobalDomain.NSDocumentSaveNewDocumentsToCloud = false;
     NSGlobalDomain.NSUseAnimatedFocusRing = false;
+    hitoolbox.AppleFnUsageType = "Do Nothing";
     ActivityMonitor.IconType = 0;
     WindowManager = {
       EnableTiledWindowMargins = false;
