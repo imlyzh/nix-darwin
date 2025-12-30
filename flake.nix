@@ -40,24 +40,19 @@
             ./home-brew.nix
             home-manager.darwinModules.home-manager {
               home-manager.extraSpecialArgs = { inherit inputs; };
-              # home-manager.useGlobalPkgs = true;
-              # home-manager.useUserPackages = true;
               home-manager.users.lyzh = {
                 imports = [
                   ./darwin-home.nix
-                  ({ config, ... }: {
+                  ({ ... }: {
                       _module.args = {
                         dotfiles=dotfiles;
                     };
                   })
-                  (import "${home-config}/home/shell.nix")
-                  (import "${home-config}/home/dev.nix")
-                  (import "${home-config}/home/rime.nix")
+                  (import "${home-config}/home/common.nix")
                 ];
               };
             }
           ];
-          # specialArgs = { inherit inputs; };
         };
         "mac-without-brew" = nix-darwin.lib.darwinSystem {
           pkgs = import nixpkgs {
@@ -68,24 +63,19 @@
             ./configuration.nix
             home-manager.darwinModules.home-manager {
               home-manager.extraSpecialArgs = { inherit inputs; };
-              # home-manager.useGlobalPkgs = true;
-              # home-manager.useUserPackages = true;
               home-manager.users.lyzh = {
                 imports = [
                   ./darwin-home.nix
-                  ({ config, ... }: {
+                  ({ ... }: {
                       _module.args = {
                         dotfiles=dotfiles;
                     };
                   })
-                  (import "${home-config}/home/shell.nix")
-                  (import "${home-config}/home/dev.nix")
-                  (import "${home-config}/home/rime.nix")
+                  (import "${home-config}/home/common.nix")
                 ];
               };
             }
           ];
-          # specialArgs = { inherit inputs; };
         };
       };
       packages.aarch64-darwin.default = darwinConfigurations."mac".system;
