@@ -51,7 +51,7 @@
 
     "ungoogled-chromium"
 
-    "orbstack"
+    # "orbstack"
 
     # "ollama"
     # "firefox@developer-edition"
