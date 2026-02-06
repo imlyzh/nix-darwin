@@ -49,7 +49,7 @@
     "onyx"
     "folo"
 
-    "ungoogled-chromium"
+    "chromium"
 
     # "orbstack"
 
