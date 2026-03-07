@@ -48,7 +48,6 @@
           };
           modules = [
             ./configuration.nix
-            ./home-brew.nix
           ];
         };
 
