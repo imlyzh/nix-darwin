@@ -6,6 +6,8 @@
     stateVersion = "25.05";
   };
 
+  programs.zsh.enable = false;
+
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nix.package = lib.mkDefault pkgs.nix;
   # nixpkgs.config.allowUnfree = true;
