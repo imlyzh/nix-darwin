@@ -38,6 +38,28 @@
           modules = [
             ./configuration.nix
             ./home-brew.nix
+          ];
+        };
+
+        "mac-without-brew" = nix-darwin.lib.darwinSystem {
+          pkgs = import nixpkgs {
+            system = "aarch64-darwin";
+            config.allowUnfree = true;
+          };
+          modules = [
+            ./configuration.nix
+            ./home-brew.nix
+          ];
+        };
+
+        "lyzh-mac" = nix-darwin.lib.darwinSystem {
+          pkgs = import nixpkgs {
+            system = "aarch64-darwin";
+            config.allowUnfree = true;
+          };
+          modules = [
+            ./configuration.nix
+            ./home-brew.nix
             home-manager.darwinModules.home-manager {
               home-manager.extraSpecialArgs = { inherit inputs; };
               home-manager.users.lyzh = {
@@ -54,7 +76,7 @@
             }
           ];
         };
-        "mac-without-brew" = nix-darwin.lib.darwinSystem {
+        "lyzh-mac-without-brew" = nix-darwin.lib.darwinSystem {
           pkgs = import nixpkgs {
             system = "aarch64-darwin";
             config.allowUnfree = true;

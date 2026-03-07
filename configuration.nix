@@ -7,10 +7,10 @@
   system.stateVersion = 6;
   system.primaryUser = "lyzh";
 
-  users.users.lyzh = {
-    name = "lyzh";
-    home = "/Users/lyzh";
-  };
+  # users.users.lyzh = {
+  #   name = "lyzh";
+  #   home = "/Users/lyzh";
+  # };
 
   environment.systemPackages = with pkgs; [
     mumble
