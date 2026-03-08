@@ -39,7 +39,7 @@
     "c0re100-qbittorrent" # qbittorrent-enhanced
     "thunderbird"
 
-    "chatwise"
+    # "chatwise"
     "telegram"
     "steam"
 
@@ -50,6 +50,10 @@
     "folo"
 
     "chromium"
+
+    "codex"
+    "claude-code"
+    "cherry-studio"
 
     # "orbstack"
 
