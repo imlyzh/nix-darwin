@@ -1,20 +1,18 @@
 { config, lib, pkgs, dotfiles, ... }:
 {
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.package = lib.mkDefault pkgs.nix;
+
   home = {
     username = "lyzh";
     homeDirectory = "/Users/lyzh";
     stateVersion = "25.05";
   };
 
-  programs.zsh.enable = false;
-
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
-  nix.package = lib.mkDefault pkgs.nix;
-  # nixpkgs.config.allowUnfree = true;
+  # home.packages = with pkgs; [];
 
   programs.home-manager.enable = true;
-
-  # home.packages = with pkgs; [];
+  programs.zsh.enable = false;
 
   home.sessionVariables = {
     RUSTUP_HOME = "\${HOME}/.rustup";
