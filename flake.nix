@@ -41,6 +41,16 @@
           ];
         };
 
+        "homebrew" = nix-darwin.lib.darwinSystem {
+          pkgs = import nixpkgs {
+            system = "aarch64-darwin";
+            config.allowUnfree = true;
+          };
+          modules = [
+            ./home-brew.nix
+          ];
+        };
+
         "mac-without-brew" = nix-darwin.lib.darwinSystem {
           pkgs = import nixpkgs {
             system = "aarch64-darwin";
