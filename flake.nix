@@ -37,7 +37,7 @@
           };
           modules = [
             ./configuration.nix
-            ./home-brew.nix
+            ./homebrew.nix
           ];
         };
 
@@ -47,7 +47,7 @@
             config.allowUnfree = true;
           };
           modules = [
-            ./home-brew.nix
+            ./homebrew.nix
           ];
         };
 
@@ -68,7 +68,7 @@
           };
           modules = [
             ./configuration.nix
-            ./home-brew.nix
+            ./homebrew.nix
             home-manager.darwinModules.home-manager {
               home-manager.extraSpecialArgs = { inherit inputs; };
               home-manager.users.lyzh = {
