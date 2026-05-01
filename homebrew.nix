@@ -57,7 +57,7 @@
     "cherry-studio"
 
     "zed"
-    "fresh"
+    "fresh-editor"
 
     "spotify"
     "logseq"
