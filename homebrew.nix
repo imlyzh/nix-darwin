@@ -51,7 +51,6 @@
 
     "chromium"
 
-    "opencode"
     "codex"
     "claude-code"
     "cherry-studio"
