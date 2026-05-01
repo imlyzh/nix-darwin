@@ -51,22 +51,20 @@
 
     "chromium"
 
+    "opencode"
     "codex"
     "claude-code"
     "cherry-studio"
 
-    # "orbstack"
+    "zed"
+    "fresh"
 
-    # "ollama"
-    # "firefox@developer-edition"
+    "spotify"
+    "logseq"
+
     # "jetbrains-toolbox"
-    # "zed"
-
-    # "adguard"
-    # "discord"
-    # "spotify"
-    # "logseq"
     # "obsidian"
+    # "adguard"
   ];
   # homebrew.masApps = {};
   # homebrew.onActivation.upgrade = true;
