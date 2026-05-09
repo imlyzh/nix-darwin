@@ -7,6 +7,18 @@
   system.stateVersion = 6;
   system.primaryUser = "lyzh";
 
+  environment.systemPackages = with pkgs; [
+    libiconv
+  ];
+  environment.variables = {
+    LIBRARY_PATH = "${pkgs.libiconv}/lib";
+    
+    CPATH = "${pkgs.libiconv}/include";
+    
+    LDFLAGS = "-L${pkgs.libiconv}/lib";
+    CPPFLAGS = "-I${pkgs.libiconv}/include";
+  };
+
   security.pam.services.sudo_local.touchIdAuth = true;
 
   system.defaults = {
