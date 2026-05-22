@@ -41,11 +41,11 @@
         "rime-without-ice": "rime-without-ice"
       },
       "locked": {
-        "lastModified": 1778936994,
-        "narHash": "sha256-MAHdhnAgWxgSGpsDVau+f5iXSfkag0MIv1KxFgbpvoQ=",
+        "lastModified": 1779425848,
+        "narHash": "sha256-3TH8NoZ9jYTbKkTJs6O7YunsGzF/SpBG++CC6fWhYeA=",
         "owner": "imlyzh",
         "repo": "home-manager",
-        "rev": "d5d3dc324a214006ce700cd90a178ac15f8aa25b",
+        "rev": "24e5e64105f0fc9ac24d92b4e83bf7071e4f5e11",
         "type": "github"
       },
       "original": {
