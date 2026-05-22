@@ -9,6 +9,7 @@
 
   environment.systemPackages = with pkgs; [
     libiconv
+    rustup
   ];
   environment.variables = {
     LIBRARY_PATH = "${pkgs.libiconv}/lib";
