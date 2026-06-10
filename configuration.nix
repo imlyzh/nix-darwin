@@ -3,9 +3,15 @@
   nix.enable = false;
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nix.settings.auto-optimise-store = true;
+  nix.package = pkgs.nix;
 
   system.stateVersion = 6;
   system.primaryUser = "lyzh";
+
+  users.users.lyzh = {
+    name = "lyzh";
+    home = "/Users/lyzh";
+  };
 
   environment.systemPackages = with pkgs; [
     libiconv
