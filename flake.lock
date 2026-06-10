@@ -41,11 +41,11 @@
         "rime-without-ice": "rime-without-ice"
       },
       "locked": {
-        "lastModified": 1781118068,
-        "narHash": "sha256-6Ln5GRPiGE9g3DIVgQQgbjVS5RiPhzcWSM6Hg/I9DCc=",
+        "lastModified": 1781135590,
+        "narHash": "sha256-9fXxwRWv6jd/HoBKxAsL/Uq+GIzvl3a69ikaPjgnW4c=",
         "owner": "imlyzh",
         "repo": "home-manager",
-        "rev": "f0ba7a5afcb21dc7c3f75ace98632e4078ffdc0f",
+        "rev": "e28d403ed2afc2dcafdc6129e588909f5bd05ac2",
         "type": "github"
       },
       "original": {
@@ -83,11 +83,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1781115013,
-        "narHash": "sha256-3BopHqMvh26sKim6rumZBY568VrISCWtRgqDuLGR/H0=",
+        "lastModified": 1781124985,
+        "narHash": "sha256-hIaUkf6qalGk2xxNEkBMP2m2aPBq+qXvUPOIwwEDySI=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "fcbbf5484ab2c733e886ef4fa91e8da1c8c028f5",
+        "rev": "d899b01766784bcc9a141ee13bad6dc689d47c37",
         "type": "github"
       },
       "original": {
