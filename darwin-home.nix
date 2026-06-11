@@ -15,8 +15,8 @@
     enable = true;
   
     initContent = ''
-    if [ -f $HOME/.zshrc.local ]; then
-      source $HOME/.zshrc.local
+    if [ -f $HOME/.zshenv.local ]; then
+      source $HOME/.zshenv.local
     fi
   '';
   };
