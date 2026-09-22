@@ -36,7 +36,6 @@
     "balenaetcher"
     "grandperspective"
     "c0re100-qbittorrent" # qbittorrent-enhanced
-    "thunderbird"
 
     # "chatwise"
     "telegram"
@@ -46,12 +45,10 @@
     "rustdesk"
     "github"
     "onyx"
-    "folo"
 
     "chromium"
 
     "codex"
-    "claude-code"
     "cherry-studio"
 
     "zed"
