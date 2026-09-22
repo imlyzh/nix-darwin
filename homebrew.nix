@@ -50,6 +50,7 @@
 
     "codex"
     "cherry-studio"
+    "opencode"
 
     "zed"
 
