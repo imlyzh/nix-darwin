@@ -17,7 +17,6 @@
     "raycast"
     "rectangle"
     "keycastr"
-    "jordanbaird-ice"
     "stats"
     "keka"
     "appcleaner"
