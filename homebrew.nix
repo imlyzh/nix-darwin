@@ -1,7 +1,13 @@
 { ... }:
 {
   homebrew.enable = true;
+  homebrew.taps = [
+    "anomalyco/tap"
+  ];
   # homebrew.formulae = [];
+  homebrew.brews = [
+    "opencode-v2"
+  ];
   homebrew.casks = [
     # necessary
     "clash-verge-rev"
@@ -50,7 +56,6 @@
 
     "codex"
     "cherry-studio"
-    "opencode"
 
     "zed"
 
